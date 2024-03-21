@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+    <link href="css/orgchart.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="menu-test" style="direction:rtl; height:40px; background:gray ; padding:10px 30px 0 0;">
+    <i class="fa fa-home"></i><a href="index.html" class="menu-item">خانه</a>
+    <i class="fa fa-book"></i> <a href="khatm.html" class="menu-item">وقف</a>
+    <i class="fa fa-street-view"></i>  <a href="request.html" class="menu-item"> شجره نامه</a>
+
+</div>
+
+<div id="myTree">
+
+<ul id="tree-data"  style="display:none">
+    <li id="root">
+        <a class="a-treelink" href="taghislider.html">تقی مقدم/خوشقدم مقدم</a>
+        <ul>
+            <li><a href="#">اسماعیل مقدم / اکرم مقدم</a>
+            <ul>
+                <li><a href="#">زهرا مقدم</a></li>
+                <li><a href="#">محمدعلی مقدم/سیده تینا ابرند آبادی زاده</a>
+                <ul>
+                    <li><a href="#">آریابد مقدم</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li><a href="#">ابراهیم مقدم</a></li>
+            <li><a href="#">منوچهر مقدم /  آزیتا خنجری</a>
+            <ul>
+                <li><a href="#">شهراد مقدم</a></li>
+            </ul>
+            </li>
+            <li><a href="#">منیژه مقدم /  فرامرز محمدی حسینه</a>
+            <ul>
+                <li><a href="#">زهرا محمدی حسینه/مجتبی سلطانی</a></li>
+                <li><a href="#">امیر محمدی حسینه</a></li>
+            </ul>
+
+            </li>
+            <li><a href="#">مهدیس مقدم / نظام الدین پژوهش</a>
+            <ul>
+                <li><a href="#">ایلیا پژوهش</a></li>
+            </ul>
+
+            </li>
+            <li><a href="#">رضا مقدم / فریماه خلیلیان</a>
+            <ul>
+                <li><a href="#">الینا مقدم</a></li>
+                <li><a href="#">امیر محمد مقدم</a></li>
+            </ul>
+            </li>
+            <li><a href="#">مریم مقدم / پیمان خرم</a></li>
+        </ul>
+
+    </li>
+
+</ul>
+
+
+</div>
+<div class="dead">
+    <h1>فوت شده ها :</h1>
+    <h4>تقی مقدم . خوشقدم مقدم . ابراهیم مقدم . نظام الدین پژوهش</h4>
+</div>
+
+
+
+
+<div class="footer">
+    <div class="item">
+
+        <a href="index.html"><i class="fa fa-home fa-2x ttt"> <p>خانه</p></i></a>
+
+    </div>
+    <div class="item">
+
+        <a href="khatm.html"><i class="fa fa-book fa-2x ttt"><p>وقف</p></i></a>
+
+    </div>
+    <div class="item">
+
+        <a href="request.html"><i class="fa fa-street-view fa-2x ttt"><p>شجره نامه</p></i></a>
+
+    </div>
+
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/orgchart.js"></script>
+<script src="js/fontawesome.min.js"></script>
+
+<script>
+
+    // $("#tree-data").jOrgChart({
+    //     chartElement: $("#tree-view")
+    // });
+
+    $("#tree-data").jOrgChart({
+
+        // target element
+        chartElement : 'body',
+
+        // depth
+        depth      : -1,
+
+        // CSS selector
+        chartClass : "jOrgChart",
+
+        // fired on clicked
+        nodeClicked: function ($node, type) {}
+
+    });
+
+
+</script>
+
+
+
+</body>
+</html>
